@@ -1,0 +1,36 @@
+/* 1. Import fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap');
+
+/* 2. Import Tailwind directives */
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Root variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0f1c;
+    --foreground: #ededed;
+  }
+}
+
+/* 4. Body styles - single block */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Sora', sans-serif;
+  cursor: none;
+}
+body {
+  font-family: 'Geist', 'Helvetica', 'Arial', sans-serif;
+}
+* {
+  cursor: none;
+}
